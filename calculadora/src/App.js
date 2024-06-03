@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css';
-
-
 import { Button } from "./components/Button.jsx";
+import { Screen } from "./components/Screen.jsx";
 
 function App() {
   return (
     <div className="container">
+      <Screen input='holi'/>
       <div className='rows'>
         <Button>1</Button>
         <Button>2</Button>
@@ -31,7 +31,6 @@ function App() {
         <Button>.</Button>
         <Button>/</Button>
       </div>
-
     </div>
   );
 }

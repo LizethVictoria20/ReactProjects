@@ -1,7 +1,7 @@
 .App {
   height: 100vh;
   padding-top: 10px;
-  background-color: #1b1b32;
+  background-color: #F8F4E1;
   font-family: Lato, sans-serif;
   display: flex;
   flex-wrap: wrap;
@@ -12,7 +12,7 @@
   width: 350px;
   height: 522px;
   padding: 14px;
-  background-color: #99c9ff;
+  background-color: #d8b8b4;
   border-radius: 20px;
   border: 5px solid white;
   margin: auto;

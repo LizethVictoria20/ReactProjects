@@ -6,14 +6,14 @@ import Logo from './img/logoCute.png';
 import { useState } from "react";
 
 function App() {
-  const [num, setNum] = useState(0)
+  const [num, setNum] = useState('')
 
   const addValue = (value) => {
     setNum(num + value);
   }
 
   const Reset = () => {
-    setNum(0)
+    setNum('')
   }
 
   return (

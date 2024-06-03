@@ -5,3 +5,7 @@ button {
     margin: .2rem;
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #f1dab0;
+}

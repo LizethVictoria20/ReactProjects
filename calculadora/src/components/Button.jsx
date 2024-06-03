@@ -3,6 +3,6 @@ import '../styles/Button.css';
 
 export function Button(props) {
     return (
-      <button>{props.children}</button>
+      <button onClick={() => props.agregarNum(props.children)}>{props.children}</button>
     );
 }

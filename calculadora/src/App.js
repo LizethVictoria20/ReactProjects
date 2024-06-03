@@ -3,8 +3,19 @@ import './App.css';
 import { Button } from "./components/Button.jsx";
 import { Screen } from "./components/Screen.jsx";
 import Logo from './img/logoCute.png';
+import { useState } from "react";
 
 function App() {
+  const [num, setNum] = useState(0)
+
+  const addValue = (value) => {
+    setNum(num + value);
+  }
+
+  const Reset = () => {
+    setNum(0)
+  }
+
   return (
     <div className='App'>
       <div className='logo-container'>
@@ -13,36 +24,35 @@ function App() {
           className='logo'
           alt='Logo muy bonito' />
       </div>
+
       <div className='container'>
-        <Screen input='Holis'/>
+        <Screen index={num} />
         <div className='rows'>
-          <Button>1</Button>
-          <Button>2</Button>
-          <Button>3</Button>
-          <Button>+</Button>
+          <Button agregarNum={addValue}>1</Button>
+          <Button agregarNum={addValue}>2</Button>
+          <Button agregarNum={addValue}>3</Button>
+          <Button agregarNum={addValue}>+</Button>
         </div>
         <div className='rows'>
-          <Button>4</Button>
-          <Button>5</Button>
-          <Button>6</Button>
-          <Button>-</Button>
+          <Button agregarNum={addValue}>4</Button>
+          <Button agregarNum={addValue}>5</Button>
+          <Button agregarNum={addValue}>6</Button>
+          <Button agregarNum={addValue}>-</Button>
         </div>
         <div className='rows'>
-          <Button>7</Button>
-          <Button>8</Button>
-          <Button>9</Button>
-          <Button>*</Button>
+          <Button agregarNum={addValue}>7</Button>
+          <Button agregarNum={addValue}>8</Button>
+          <Button agregarNum={addValue}>9</Button>
+          <Button agregarNum={addValue}>*</Button>
         </div>
         <div className='rows'>
-          <Button>=</Button>
-          <Button>0</Button>
-          <Button>.</Button>
-          <Button>/</Button>
+          <Button agregarNum={addValue}>=</Button>
+          <Button agregarNum={addValue}>0</Button>
+          <Button agregarNum={addValue}>.</Button>
+          <Button agregarNum={addValue}>/</Button>
         </div>
         <div className='rows'>
-          <Button>
-            Clear
-          </Button>
+          <Button agregarNum={Reset}>Clear</Button>
         </div>
       </div>
     </div>

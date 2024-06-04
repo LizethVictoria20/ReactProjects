@@ -4,12 +4,18 @@ import { Button } from "./components/Button.jsx";
 import { Screen } from "./components/Screen.jsx";
 import Logo from './img/logoCute.png';
 import { useState } from "react";
+import { evaluate } from 'mathjs';
 
 function App() {
   const [num, setNum] = useState('')
 
+
   const addValue = (value) => {
-    setNum(num + value);
+    setNum(num + value)
+  }
+
+  const operation = () => {
+    setNum(evaluate(num))
   }
 
   const Reset = () => {
@@ -46,7 +52,7 @@ function App() {
           <Button agregarNum={addValue}>*</Button>
         </div>
         <div className='rows'>
-          <Button agregarNum={addValue}>=</Button>
+          <Button agregarNum={operation}>=</Button>
           <Button agregarNum={addValue}>0</Button>
           <Button agregarNum={addValue}>.</Button>
           <Button agregarNum={addValue}>/</Button>

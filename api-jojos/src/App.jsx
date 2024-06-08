@@ -1,16 +1,13 @@
-import { RenderAPI } from './components/apiFetch.jsx';
+import { Cards } from './components/Cards.jsx';
 
 
 function App() {
-  const { character, setCharacter } = RenderAPI('https://stand-by-me.herokuapp.com/api/v1/characters');
-  
   return (
     <div>
-      {character?.map((data) => <div key={data.id}>{data.name}</div>)}
+      <Cards />
     </div>
-
   )
-  
+
 }
 
 export default App;

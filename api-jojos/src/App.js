@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import RenderAPI from './components/apiFetch.jsx';
+import  { Container } from "./components/Container.jsx";
 
 function App() {
+  fetch('https://stand-by-me.herokuapp.com/api/v1/characters')
+  .then((res) => res.json())
+  .then((data) => {
+      <div className="App" id="app">
+      <Container name={data.name}/>
+      </div>
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    console.log('holi')
   );
 }
 
 export default App;
+
+//https://stand-by-me.herokuapp.com/api/v1/characters
+//https://jojos-bizarre-api.netlify.app/assets/jonathan.webp

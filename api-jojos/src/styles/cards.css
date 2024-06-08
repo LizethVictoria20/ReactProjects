@@ -8,9 +8,15 @@
 }
 
 .card {
-    border: 1px solid black;
     width: 18rem;
     height: 22rem;
     border-radius: 1rem;
     text-align: center;
+    box-shadow: 10px 4px 43px -19px rgba(128,23,128,0.63);
+    cursor: pointer;
+
+}
+
+.card img {
+    width: 6rem;
 }

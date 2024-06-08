@@ -6,7 +6,8 @@ export function RenderAPI(url) {
     .then((res) => res.json())
     .then((res) => {
         setCharacter(res);
-    }, []);
+    })
+    .catch((error) => {console.error(`Hubo un error ${error}`)})
     return { character, RenderAPI };
 }
 

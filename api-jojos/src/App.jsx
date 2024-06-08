@@ -1,10 +1,13 @@
 import { Cards } from './components/Cards.jsx';
+import Logo from '../src/images/JojosLogo.png'
 
 
 function App() {
   return (
-    <div>
-      <h1>Holis</h1>
+    <div className='container-app'>
+    <div className='Logo'>
+      <img src={Logo} alt='Logo jojos'/>
+      </div>
       <Cards />
     </div>
   )

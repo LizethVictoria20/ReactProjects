@@ -1,0 +1,30 @@
+.img-characters {
+    width: 15rem;
+}
+
+.container-character {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    margin: auto;
+    margin-top: 6rem;
+    border: 1px solid #f3f3f3;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 10px 10px 5px -6px rgba(209,207,209,1);
+
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.true {
+    color: green;
+  }
+  
+  .false {
+    color: red;
+  }

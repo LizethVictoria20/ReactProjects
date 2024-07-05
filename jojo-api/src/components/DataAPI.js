@@ -8,7 +8,6 @@ function DataAPI() {
       .then((res) => res.json())
       .then((data) => {
         setCharacters(data);
-        console.log(data);
       });
   }, []);
   return (

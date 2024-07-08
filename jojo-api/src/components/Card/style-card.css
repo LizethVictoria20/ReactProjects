@@ -11,11 +11,6 @@
     margin: 5rem;
 }
 
-.Logo {
-    display: grid;
-    justify-content: center;
-    margin: 3rem;
-}
 
 .card {
     width: 18rem;
@@ -31,8 +26,3 @@
     width: 6rem;
 }
 
-.main-logo {
-    display: flex;
-    justify-content: center;
-    margin: 4rem 0 4rem 0;
-}

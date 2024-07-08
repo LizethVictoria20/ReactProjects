@@ -24,9 +24,15 @@
     text-align: center;
     box-shadow: 10px 4px 43px -19px rgba(128,23,128,0.63);
     cursor: pointer;
-
+    padding: 1rem;
 }
 
 .card img {
     width: 6rem;
+}
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 4rem 0;
 }

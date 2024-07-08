@@ -8,8 +8,8 @@ function Card({ characters }) {
   if (characters.length > 0) {
     return (
       <>
-      <div>
-        <img src={Logo} alt="" />
+      <div  className="main-logo">
+        <img src={Logo} alt="Logo Jojo's" />
       </div>
       <div className="container">
         {characters.map((character) => {

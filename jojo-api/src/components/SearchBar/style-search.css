@@ -1,0 +1,13 @@
+.search-character {
+    display: flex;
+    justify-content: center;
+}
+
+.search-character input {
+    width: 25rem;
+    height: 1rem;
+    border-radius: .5rem;
+    border: solid 1px #f3f3f3;
+    margin: 3rem;
+    padding: 1rem;
+}

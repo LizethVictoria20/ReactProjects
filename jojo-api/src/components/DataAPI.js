@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Card from "./Card/Card.jsx";
+import SearchBar from "./SearchBar/SearchBar.jsx";
 function DataAPI() {
   const [characters, setCharacters] = useState([]);
 
@@ -13,6 +14,7 @@ function DataAPI() {
   return (
     <>
       <Card characters={characters} />;
+      <SearchBar search={characters} />
     </>
   );
 }

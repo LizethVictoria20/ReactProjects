@@ -1,5 +1,6 @@
 import "./style-card.css";
 import { Link } from "react-router-dom";
+import SearchBar from "../SearchBar/SearchBar";
 
 function Card({ characters }) {
   const urlImg = "https://jojos-bizarre-api.netlify.app/assets/";

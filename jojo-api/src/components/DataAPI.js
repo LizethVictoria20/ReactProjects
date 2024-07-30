@@ -14,7 +14,7 @@ function DataAPI() {
   return (
     <>
       <Card characters={characters} />;
-      <SearchBar search={characters} />
+      <SearchBar characters={characters} />
     </>
   );
 }

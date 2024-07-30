@@ -1,27 +1,31 @@
 import "./style-search.css";
 import { useState, useEffect } from "react";
 
-function SearchBar({ search }) {
-  const [character, setCharacter] = useState();
+function SearchBar({ characters }) {
   const [searchs, setSearch] = useState("");
+  const [filteredCharacters, setFilteredCharacters] = useState([]);
 
   useEffect(() => {
-    if (!search || search.length === 0) {
-      console.log("Sin datos aún");
-    } else {
-      // console.log(search);
-      const filter = search.filter(
-        (valueFilter) => search.map((value) => console.log(valueFilter))
-        // !value.name.toLowerCase().includes(character.toLowerCase()) &&
-        // !value.house.toLowerCase().includes(character.toLowerCase())
-      );
+    if (Array.isArray(characters) && characters.length > 0) {
+      setFilteredCharacters(characters);
+      const FilteredPlayers = characters.filter ((data) => {
 
-      console.log(filter);
+        if (data.name.toUpperCase( ).includes (searchs.toUpperCase( ))) {
+          return true;
+        }
+        return false;
+         
+        });
+        console.log(FilteredPlayers)
+
+    } else {
+      setFilteredCharacters([]);
     }
-  }, [search]);
+  }, [characters]);
 
   const handleEvent = (e) => {
     e.preventDefault();
+    console.log(searchs);
     setSearch(e.target.value);
   };
 
@@ -29,7 +33,12 @@ function SearchBar({ search }) {
     <>
       <div className="search-character">
         <form action="">
-          <input type="search" placeholder="Search..." onChange={handleEvent} />
+          <input
+            type="search"
+            placeholder="Search..."
+            onChange={handleEvent}
+            value={searchs}
+          />
         </form>
       </div>
     </>

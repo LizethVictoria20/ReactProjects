@@ -40,6 +40,19 @@
   margin-top: 4rem;
 }
 
+.container-filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-character {
+  width: 20rem;
+  border-radius: 8px;
+  height: 2rem;
+  margin: 3rem;
+  border: solid 2px #bfbdbd;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

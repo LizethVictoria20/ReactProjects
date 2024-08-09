@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import DataAPI from "./components/DataAPI";
 import Detail from "./components/Details/Detail";
 import Logo from "./assets/JojosLogo.png";
-import SearchBar from "./components/SearchBar/SearchBar.jsx";
 import "./App.css";
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
           <img src={Logo} alt="Logo Jojo's" />
         </div>
       </Link>
-      <SearchBar />
       <Routes>
         <Route exact path="/" element={<DataAPI />} />
         <Route path="/:characterID" element={<Detail />} />
